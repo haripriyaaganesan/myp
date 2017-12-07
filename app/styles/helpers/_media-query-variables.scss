@@ -1,0 +1,39 @@
+
+// //Neat Variables
+
+// $screen-xxs:								em(320);
+// $screen-xs:									em(480);
+// $screen-s:									em(481);
+// $screen-ss:									em(568);
+// $screen-m:									em(680);
+// $screen-l:									em(760);
+// $screen-xl:									em(761);
+// $screen-xxl:								em(860);
+
+// $medium-screen:								em(841);
+// $medium-large-screen:						em(970);
+// $large-screen:								em(860);
+// $x-large-screen:							em(970);
+// $xx-large-screen:							em(1088);
+// $super-large-screen:						em(1280);
+
+
+
+
+
+// $viewport-xxs: 								new-breakpoint(min-width $screen-xxs max-width $screen-ss 4);
+// $viewport-xs:								new-breakpoint(min-width $screen-s max-width $screen-ss 4);
+
+
+
+
+// $mobile-large-screen-up:					new-breakpoint(min-width em(480) 6);
+// $tablet: 									new-breakpoint(max-width em(760) min-width em(321));
+// $tablet-small-screen-up:					new-breakpoint(min-width em(568) 6);
+// $desktop: 									new-breakpoint(min-width em(761));	
+// $medium-screen-up:							new-breakpoint(min-width em(640) 12);
+// $medium-large-screen-up:					new-breakpoint(min-width em(750) 12);
+// $large-screen-up:							new-breakpoint(min-width em(860) 12);
+// $x-large-screen-up:							new-breakpoint(min-width em(970) 12);
+// $xx-large-screen-up:						new-breakpoint(min-width em(1088) 12);
+// $super-large-screen-up:						new-breakpoint(min-width em(1280) 12);

@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haripriyaa's - Web Developer Portfolio</title>
+    <!-- <base target="_self" href="http://www.haripriyaaganesan.com"> -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/plugins/font-awesome-4.6.3/css/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> -->
+  <!-- [if IE]> -->
+      <!-- <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
+  <!-- <![endif] -->
+  <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/lib/sequence/imagesloaded.pkgd.min.js"></script>
+    <script src="scripts/lib/sequence/hammer.min.js"></script>
+    <script src="scripts/lib/sequence/sequence.min.js"></script>
+    <script src="scripts/lib/sequence/sequence-theme.basic.js"></script>
+  <!-- endbuild -->
+  </head>
+  <body ng-app="myPortfolioApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- -->
+    <div class="container-fluid">
+      <header class="header">
+        <div class="mast-head row">
+            <div class="mast-head__logo col-xs-8 col-sm-5 col-md-5 col-lg-5">
+              <div class="mast-head__logo row">
+                <div class="mast-head__logo__img col-xs-4 col-sm-2 col-md-2 col-lg-2">
+                  <!-- <picture> -->
+                    <!-- <source 
+                      media="(min-width: 36em)"
+                      srcset="images/portfolio-logo-v8-100.png 1920w,
+                              images/portfolio-logo-v8-75.png 960w,
+                              images/portfolio-logo-v8-50.png 480w"
+                    /> -->
+                    <img 
+                      src="images/portfolio-logo-v8-60.png" width="41" height="41" 
+                      alt="Haripriyaa's - Web Developer Portfolio"
+                      class="img-responsive hidden-sm hidden-md hidden-lg"
+                    />
+                  <!-- </picture> -->
+                </div>
+                <div class="mast-head__logo__caption hidden-xs col-sm-9 col-md-8 col-lg-8">
+                      <span class="mast-head__logo__caption--ln1">Haripriyaa Ganesan</span>
+                      <span class="mast-head__logo__caption--ln2">Frontend Web Developer</span> 
+                </div>
+              </div>
+            </div>
+            <nav class="mast-head__navbar js-mast-head__navbar navbar navbar-default" role="navigation">
+              <!-- <div class="container"> -->
+                <div class="navbar-header mast-head__navbar__hamburger">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>                
+                <!-- End .navbar__hamburger -->
+                <div class="collapse navbar-collapse mast-head__navbar__list__wrapper js-mast-head__navbar__list__wrapper" id="js-navbar-collapse">
+
+                  <ul class="nav navbar-nav mast-head__navbar__list js-mast-head__navbar__list">
+                    <li class="mast-head__navbar__list__item"><a id="js-mast-head__navbar__list__link--1" class="mast-head__navbar__list__link" href="#js-content__about" ng-href="#/about">About</a></li>
+                    <li class="mast-head__navbar__list__item"><a id="js-mast-head__navbar__list__link--2" class="mast-head__navbar__list__link" href="#js-content__portfolio" ng-href="#/about">Portfolio</a></li>
+                    <li class="mast-head__navbar__list__item"><a id="js-mast-head__navbar__list__link--3" class="mast-head__navbar__list__link" href="#js-content__testimonials" ng-href="#/about">Testimonials</a></li>
+                    <li class="mast-head__navbar__list__item"><a id="js-mast-head__navbar__list__link--4" class="mast-head__navbar__list__link" href="#js-content__contact" ng-href="#/">Contact</a></li>
+                  </ul>
+                </div>
+              <!-- </div> -->
+            </nav> <!-- End .mast-head__navbar -->
+        </div> <!-- End .mast-head -->
+      </header>
+      
+      <section id="js-home" class"home">
+          <div class="row home__content__wrap">
+              <article class="home__content__container">
+                  <div class="home__content__heading">
+                      <h1 class="home__content__heading__1 animated fadeInDown delay">My name is Haripriyaa Ganesan and I'm a web developer in Silicon Valley.</h1>
+                  </div>
+                  <div class="home__content__scroll--down">
+                      <div id="js-home__content__scroll--down"><div class="to--bottom"></div></div>
+                            <!-- <i id="js-home__content__scroll--down" class="fa fa-chevron-circle-down fa-2x fa-fw animated"></i> -->
+                  </div>
+                  <!-- <a id="toTop" href="#1"><div class="to-top"></div></a> -->
+              </article>
+
+          </div>
+      </section>
+
+
+      
+      <div id="content" class="page__content">
+        <section id="js-content__about" class="about">
+            <article class="about__me">
+              <header class="about__me__heading">
+                  <h1>About Me</h1>
+              </header><!-- /header -->
+              <div class="about__me__content">
+                  I’m Haripriyaa Ganesan, a web developer and occasional designer, and this site is a showcase of my work. I build clean, attractive, user-friendly websites that comply with the latest web standards. I specialize in front-end design, accessibility, HTML /CSS construction and JavaScript programming. I am currently open to freelance work, please check out my portfolio and if you like my work please contact me. Thanks for stopping by!
+              </div>
+            </article>
+
+            <article class="about__site">
+              <header class="about__site__heading">
+                  <h1>About This Website</h1>
+              </header><!-- /header -->
+              <div class="about__site__content">
+                  This website was built responsively using HTML5, CSS and some jQuery magic. For the CMS, I'm currently using WordPress as the CMS, but am thinking of using Jekyll on my next build. Fonts are served through Google Fonts. For the photo grid, I'm using Masonry (Thanks David DeSandro), and for the lightbox, I decided to customize this jQuery plugin by Osvaldas Valutis. All photos on the website were taken by me.
+              </div>
+            </article>
+
+        </section>
+        <section id="js-content__portfolio page__content__portfolio">
+            <div class="page__content__wrapper">
+                <header>
+                <h1>Work</h1>
+                <p>From Web Components and UX design to Meteorjs and Coffeescript, check out my latest web projects.</p>
+                <div class="filters">
+                  <ul>
+                    <li>Web Components</li>
+                    <li>HTML5</li>
+                    <li>SASS</li>
+                    <li>LESS</li>
+                    <li>BEM</li>
+                    <li>WEBSITE</li>
+                    <li>GRUNT</li>
+                    <li>GULP</li>
+                    <li>JAVASCRIPT</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+                </header>
+                <ul class="page__content__portfolio__grid _grid--list">
+                  <li class="page__content__portfolio__grid__item">
+                    <h2>WWF | Why Go Wild?</h2>
+                    <a href="/work/whygowild" class="screen">
+                      <span data-text="WWF | Why Go Wild?">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                      </span>
+                      <div class="thumb" style="background-image:url(//caferati-two-caferati.netdna-ssl.com/images/work/whygowild/list.jpg);">
+                        <div class="tags">
+                          <div>
+                            <ul>
+                                <li>SASS</li>
+                                <li>UI/UX ANIMATIONS</li>
+                                <li>REQUIREJS</li>
+                                <li>BACKBONEJS</li>
+                                <li>SNAPSVG</li>                                
+                            <li class="hidden">WEBSITE</li><li class="hidden">HTML5</li><li class="hidden">CSS3</li><li class="hidden">SPA</li></ul>
+                          </div>
+                        </div>
+                        <div style="background-image:url(//caferati-two-caferati.netdna-ssl.com/images/work/whygowild/hover.jpg)" class="imgs"></div>
+                      </div>
+                      <em class="fwa">FWA Winner</em>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </section>
+        <section id="js-content__testimonials">
+            <h1>Testimonials</h1>
+        </section>
+        <section id="js-content__contact">
+            <h1>Contact</h1>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+            </div>
+        </footer>
+        <a id="js-toTop" class="link__scroll--up" href="#js-content__about">
+            <div class="to-top"></div>
+        </a>
+      </div> <!-- End .page__content -->
+    </div> <!-- End .container-fluid -->
+
+    <!-- <div class="container">
+    <div ng-view=""></div>
+    </div> -->
+
+    
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/lib/waypoints.min.js"></script>        
+        <script src="scripts/page.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

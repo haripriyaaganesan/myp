@@ -1,0 +1,51 @@
+.home {
+	&__content {
+		&__wrap {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__container {
+			font-family: 'Muli', sans-serif;
+			border-radius: $masthead-content-container-border-radius !important;
+			text-align: center;
+			//padding-top: 30px;
+			//padding-bottom: 150px;
+			//margin-bottom: 30px;
+			color: #fbfbfb;
+			width: 100%;
+			vertical-align: middle;
+			background-image: url("../images/work_hero_v2.jpg");
+			background-color: #2C333B;
+			background-size: cover;
+			background-repeat: no-repeat;
+			//background-position: center center;
+			background-position: center top;
+			background-attachment: scroll;
+    		height: auto;
+    		display: block;
+    		padding: 8% 0;
+    	}
+    	&__heading {
+    		display: block;
+		    //border: 1px solid red;
+		    width: 100%;
+		    padding: 30px 0;
+		    &__1 {}
+
+    	}
+    	&__scroll {
+    		&--down {
+    			display: block;
+			    //border: 1px solid red;
+			    width: 100%;
+			    //padding: 30px 0;
+			    position: relative;
+			    float: left;
+			    top: 92px;
+    		}
+    	}
+
+	}
+}
+
+

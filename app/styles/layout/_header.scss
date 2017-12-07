@@ -1,0 +1,268 @@
+.active {
+  border-bottom: 2px solid #1E9E6B;
+}
+
+
+.visible {
+  opacity: 1;
+}
+
+#content {
+	section {
+	  width: 100%;
+	  padding: 50px;
+	  background-color: #ecf0f1;
+	  border-bottom: 1px solid #ccc;
+	  height: 300px;
+	  text-align: center;
+	}
+
+	section:nth-child(1) {
+	  margin-top: 100px;
+	}	
+}
+
+// footer {
+//   height: 500px;
+//   width: 100%;
+//   padding: 50px;
+//   background-color: #bdc3c7;
+//   text-align: center;
+// }
+
+// footer h3 {
+//   color: #333;
+//   margin-bottom: 10px;
+// }
+
+// footer p {
+//   color: #ecf0f1;
+// }
+
+// footer a:hover {
+//   color: #333;
+// }
+
+header.header {
+	margin: 0;
+	padding: 0;
+	border-bottom: $header-border-btm-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: all .3s ease-in-out;
+	z-index: 10000;
+	background: #fff;
+}
+
+.mast-head {
+	.navbar {
+		&-collapse {
+			border-color: $mast-head-navbar-collapse-bdr-color;
+			margin-top: $mast-head-navbar-collapse-margin-top;
+		}
+		&-toggle {
+			margin-top: 12px;
+			margin-bottom: 0;
+			background-color: $mast-head-navbar-toggle-bg-color;
+			&:hover, &:focus {
+				background-color: $mast-head-navbar-toggle-hv-focus-bg-color;
+			}
+			.icon-bar {
+				background-color: $mast-head-navbar-toggle-iconbar-bg-color;
+			}
+		}
+		&-default {
+			.navbar-nav {
+				a, .active:hover, .active:focus {
+					background-color: transparent;
+					color: #555;
+				}
+			}
+		}
+		
+	} // End .navbar
+	&__navbar {
+		background-color: $navigation-bar-background-color;
+		border-color: $navigation-bar-border-color;
+		border-width: 0px;
+		margin-bottom: 10px;
+		&__list {
+			&__wrapper {
+				//float: right;
+				padding: 0;
+			}
+			&__link {
+				text-transform: uppercase;
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: transparent !important;
+				}
+			}
+		}
+
+	}
+	&__logo {
+		&__img{
+			margin-top: 10px;
+			padding-right: 0;
+		}
+		&__caption {
+			display: flex;
+			flex-direction: column;
+			padding-left: 0;			
+			@include media-breakpoint-up(xl) { 
+				.mast-head__logo__caption--ln1 {
+					font-size: 1.6rem;
+				    letter-spacing: .4rem;
+				    line-height: 2.5rem;
+				}
+			}
+			.mast-head__logo__caption--ln1,
+			.mast-head__logo__caption--ln2 {
+				font-family: 'Montserrat', Helvetica, sans-serif;
+    			font-weight: 500;
+    			text-transform: uppercase;    			
+			}
+		}
+	}	
+}
+
+#js-home {
+	width: 100%;
+	top: 73px;
+	position: relative;
+}
+
+//Media Queries
+//
+//Screens of width larger than 544px
+@include media-breakpoint-up(sm) { 
+	.mast-head {
+		&__logo {
+			&__caption {
+				margin-left: 0;
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+//Screens of width larger than 768px
+@include media-breakpoint-up(md) { 
+	.mast-head {
+		display: flex;
+		//align-items: center;
+		flex-direction: row;
+		&__logo {
+			&__img {
+				img {
+					margin-left: 10px;
+				}
+			}
+			&__caption {
+				margin-top: 7px;
+				&::before {
+					content: url(../../images/portfolio-logo-v8-50.png);
+					position: absolute;
+					left: -54px;
+					top: -5px;
+				}
+				.mast-head__logo__caption--ln1 {
+					font-size: 1.4rem;
+				    letter-spacing: 0.3rem;
+				    line-height: 2.2rem;
+				}
+			}
+		}		
+		&__navbar {
+			width: 59%;	
+			&__list {
+				&__wrapper {
+					display: flex !important;
+					justify-content: flex-end;
+				}		
+				&__link {
+					font-size: 1.26rem;
+					font-weight: 500;
+
+				}			
+			}
+
+		}
+	}
+	.navbar-collapse {
+		&.collapse {
+			display: flex !important;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) { 
+	.mast-head {
+		display: flex;
+		flex-direction: row;
+		&__navbar {
+			width: 59%;
+			&__list {
+				&__wrapper {
+					display: flex !important;
+					justify-content: flex-end;
+				}	
+				&__link {
+					font-size: 1.26rem;
+					font-weight: 500;
+
+				}			
+			}
+
+		}
+		&__logo {
+			&__caption {
+				margin-left: 10px;
+				margin-top: 7px;
+				&::before {
+					content: url(../../images/portfolio-logo-v8-50.png);
+					position: absolute;
+					left: -54px;
+					top: -5px;
+				}
+				.mast-head__logo__caption--ln1 {
+					font-size: 1.4rem;
+				    letter-spacing: 0.3rem;
+				    line-height: 2.2rem;
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		&.collapse {
+			display: flex !important;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) { 
+	.mast-head {
+		flex-direction: row;
+		&__navbar {
+			width: 57%;	
+			&__list {
+				&__wrapper {
+					display: flex !important;
+					justify-content: flex-end;
+				}
+				&__item {
+					float: right;
+				}					
+			}
+		}
+	}
+	.navbar-collapse {
+		&.collapse {
+			display: flex !important;
+		}
+	}
+}

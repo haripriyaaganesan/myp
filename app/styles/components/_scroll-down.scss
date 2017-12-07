@@ -1,0 +1,25 @@
+.to--bottom {
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  bottom: 75px;
+  left: 49%;
+}
+.to--bottom:hover {
+  box-shadow: 0 0 10px #333;
+}
+.to--bottom:before {
+  font-family: FontAwesome;
+  content: "\f103";
+  display: block;
+  margin: 0 auto;
+  width: 0; 
+  height: 0; 
+  position: relative;
+  font-size: 2rem;
+  right: 7px;
+  bottom: -4px;
+  color: black;
+}
